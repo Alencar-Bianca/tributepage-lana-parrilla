@@ -1,0 +1,198 @@
+/***********CONFIG GERAL***************/
+:root{
+    --title:  #F4D1AE;
+    --backgroundColorHeader: #496A81;
+    --backgroundColorSection: #2B3A67;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+/***********HEADER***************/
+header{
+    background-color: var(--backgroundColorHeader);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul a {
+    font-family: 'Rubik Distressed', cursive;
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+nav ul a:hover{
+    background-color: #345390;
+    color: rgb(207, 203, 203);
+}
+/***********BANNER***************/
+#banner{
+    background-image: url('../img/banner.jpg');
+    height: 645px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 250px;
+    justify-content: center;
+}
+h1{
+    font-family: 'Rubik Microbe', cursive;
+    font-size: 55px;
+    color: var(--title);
+}
+h2{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 28px;
+}
+.title{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 40px;
+}
+/***********BIO***************/
+.bio{
+    padding: 20px;
+}
+.info-bio{
+    display: flex;
+    width: 100%;
+    height: 1005;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 30px
+}
+.photo2{
+    width: 150px;
+    height: 150px;
+}
+.info-text p {
+    line-height: 25px;
+}
+/***********FILM***************/
+.film{
+    background-color: var(--backgroundColorSection);
+    padding: 20px;
+}
+.containerFilm{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.singleFilm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    padding: 30px;
+    border-radius: 28px;
+    background-color: #E8EDDF;
+    border: 5px dashed rgb(190, 189, 189);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.span{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+/***********AWARDS***************/
+.awards{
+    padding: 20px;
+}
+.award{
+    background-color: var(--backgroundColorHeader);
+    color: white;
+    font-weight: bold;
+}
+/***********FOOTER***************/
+footer{
+    background-color: #CFDBD5;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/******************************************************************************************************************************/
+@media (max-width:890px)  {
+    header{
+        padding: 10px;
+    }
+    nav ul a {
+        padding: 10px;
+        
+    }
+    .info{
+        margin-left: 25px;
+    }
+    .info-bio{
+        flex-direction: column;
+    }
+    .bio .info-photo{
+        margin: 20px 0;
+    }
+    .containerFilm{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        
+    }
+    .singleFilm{
+        max-width: 500px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px)  {
+    header{
+        display: none;
+    }
+}
+
+@media (max-width: 440px)  {
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+    .photo2{
+        width: 100px;
+        height: 100px;
+    }
+    .singleFilm{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 314px)  {
+    .title{
+        font-size: 30px;
+    }
+    
+}
